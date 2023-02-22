@@ -27,7 +27,7 @@ if __name__ == '__main__':
                 print(f"Merging: {file}")
                 merger.append(
                     os.path.join(args.path, file),
-                    bookmark=bookmark
+                    outline_item=bookmark
                 )
         print("Writing to result PDF File...")
         merger.write(dest)
